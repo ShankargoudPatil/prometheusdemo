@@ -1,0 +1,14 @@
+route:
+  group_by: [Alertname]
+  # Send all notifications to me.
+  receiver: email-me
+
+receivers:
+- name: email-me
+  email_configs:
+  - to: Shankargoud.Patil@crowcon.com # shankar.patil784@gmail.com
+    from: shankar.patil784@gmail.com
+    smarthost: smtp.gmail.com:587
+    auth_username: "shankar.patil784@gmail.com"
+    auth_identity: "shankar.patil784@gmail.com"
+    auth_password: "ffcztnogbdhyqvyi"
